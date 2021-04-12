@@ -4,55 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">WebStudio</a></li>
-                <li><a href="#">Agencja</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+    <header class="header">
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li class="header-list-logo"><a class="header-list-logo-link link" href="index.html"><span>Web</span>Studio</a></li>
+                <li class="header-list-item"><a class="header-list-link link" href="#">Agencja</a></li>
+                <li class="header-list-item"><a class="header-list-link link" href="#">Portfolio</a></li>
+                <li class="header-list-item"><a class="header-list-link link" href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+        <ul class="header-list">
+            <li class="header-list-mail"><a class="header-list-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="header-list-number"><a class="header-list-link link" href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
     </header>
     
-    <main>
+    <main class="main-portfolio">
         <!--BUTTONS-->
-        <section>
-            <h2 hidden>Przyciski nawigacji</h2>
-            <ul>
-                <li>
-                    <button type="button">Wszystkie</button>
+        <section class="buttons">
+            <h2 hidden class="buttons-header">Przyciski nawigacji</h2>
+            <ul class="buttons-list">
+                <li class="buttons-list-item">
+                    <button class="button-list-item-btn" type="button">Wszystkie</button>
                 </li>
-                <li>
-                    <button type="button">Strony</button>
+                <li class="buttons-list-item">
+                    <button class="button-list-item-btn" type="button">Strony</button>
                 </li>
-                <li>
-                    <button type="button">Aplikacje</button>
+                <li class="buttons-list-item">
+                    <button class="button-list-item-btn" type="button">Aplikacje</button>
                 </li>
-                <li>
-                    <button type="button">Dizajn</button>
+                <li class="buttons-list-item">
+                    <button class="button-list-item-btn" type="button">Dizajn</button>
                 </li>
-                <li>
-                    <button type="button">Marketing</button>
+                <li class="buttons-list-item">
+                    <button class="button-list-item-btn" type="button">Marketing</button>
                 </li>
             </ul>
         </section>
 
         <!--PORTFOLIO-->
-        <section>
-            <ul>
-                <li>
-                    <a href="#">
-                    <img 
+        <section class="portfolio">
+            <ul class="portfolio-list">
+                <li class="portfolio-list-item">
+                    <a class="portfolio-list-item-link link" href="#">
+                    <img class="portfolio-list-item-link-photo"
                     src="images/portfolio/1_technocrack.jpg" 
                     alt="otwarty laptop z wyświetloną stroną internetową"
                     width="370"
@@ -61,93 +64,93 @@
                     <p>Strona internetowa</p>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                    <img 
+                <li class="portfolio-list-item">
+                    <a class="portfolio-list-item-link link" href="#">
+                    <img class="portfolio-list-item-link-photo"
                     src="images/portfolio/2_new_orlen.jpg" 
                     alt="dwóch koszykarzy walczy o piłkę"
                     width="370"
                     height="294">
-                    </a>
                     <h4>Grafika New Orlean vs Golden Star</h4>
                     <p>Dizajn</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                    <img 
+                <li class="portfolio-list-item">
+                    <a class="portfolio-list-item-link link" href="#">
+                    <img class="portfolio-list-item-link-photo"
                     src="images/portfolio/3_sea_food.jpg" 
                     alt="logo restaruracji Sea Food"
                     width="370"
                     height="294">
-                    </a>
                     <h4>Restauracja Seafood</h4>
                     <p>Aplikacja</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                    <img 
+                <li class="portfolio-list-item">
+                    <a class="portfolio-list-item-link link" href="#">
+                    <img class="portfolio-list-item-link-photo"
                     src="images/portfolio/4_prime.jpg" 
                     alt="słuchawki nauszne"
                     width="370"
                     height="294">
-                    </a>
                     <h4>Projekt Prime</h4>
                     <p>Marketing</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                    <img 
+                <li class="portfolio-list-item">
+                    <a class="portfolio-list-item-link link" href="#">
+                    <img class="portfolio-list-item-link-photo"
                     src="images/portfolio/5_boxes.jpg" 
                     alt="dwa pudełka"
                     width="370"
                     height="294">
-                    </a>
                     <h4>Projekt Boxes</h4>
                     <p>Aplikacja</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                    <img 
+                <li class="portfolio-list-item">
+                    <a class="portfolio-list-item-link link" href="#">
+                    <img class="portfolio-list-item-link-photo"
                     src="images/portfolio/6_inspiration_borders.jpg" 
                     alt="monitor komputerowy z wyświetloną stroną intenretową"
                     width="370"
                     height="294">
-                    </a>
                     <h4>Inspiration has no Borders</h4>
                     <p>Strona internetowa</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                    <img 
+                <li class="portfolio-list-item">
+                    <a class="portfolio-list-item-link link" href="#">
+                    <img class="portfolio-list-item-link-photo"
                     src="images/portfolio/7_limited_edition.jpg" 
                     alt="otwarty magazyn ze zdjęciami i opisami"
                     width="370"
                     height="294">
-                    </a>
                     <h4>Magazyn Limited Edition</h4>
                     <p>Dizajn</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                    <img 
+                <li class="portfolio-list-item">
+                    <a class="portfolio-list-item-link link" href="#">
+                    <img class="portfolio-list-item-link-photo"
                     src="images/portfolio/8_lab.jpg" 
                     alt="metka z nazwą Lab"
                     width="370"
                     height="294">
-                    </a>
                     <h4>Projekt LAB</h4>
                     <p>Marketing</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#">
-                    <img 
+                <li class="portfolio-list-item">
+                    <a class="portfolio-list-item-link link" href="#">
+                    <img class="portfolio-list-item-link-photo"
                     src="images/portfolio/9_growing_bussines.jpg" 
                     alt="otwarty laptop na którym ktoś pracuje"
                     width="370"
                     height="294">
-                    </a>
                     <h4>Growing Business</h4>
                     <p>Aplikacja</p>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -156,17 +159,17 @@
 
 
 
-    <footer>
-        <a href="https://tomeksokol.github.io/goit-markup-hw-01/">WebStudio</a>
+    <footer class="footer">
+        <a class="footer-link-logo link" href="https://tomeksokol.github.io/goit-markup-hw-01/"><span>Web</span>Studio</a>
     
-        <address id="contact">
-            <ul>
-                <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-                <li>
-                    <a href="mailto:info@example.com">info@example.com</a>
+        <address class="address" id="contact">
+            <ul class="address-list">
+                <li class="address-list-street">m. Warszawa, Aleje Jerozolimskie 21</li>
+                <li class="address-list-item">
+                    <a class="address-list-item-mail link" href="mailto:info@example.com">info@example.com</a>
                 </li>
-                <li>
-                    <a href="tel:+48111111111">+48 111 111 111</a>
+                <li class="address-list-item">
+                    <a class="address-list-item-tel link" href="tel:+48111111111">+48 111 111 111</a>
                 </li>
             </ul>
         </address>

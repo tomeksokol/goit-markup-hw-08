@@ -1,0 +1,202 @@
+:root {
+    --main-color: #212121;
+    --second-color: #757575;
+    --hover-color: #2196F3;
+    --white-color: #FFFFFF;
+    --logo-color: #000000;
+    --heroe-footer-color: #2F303A;
+    --team-color: #F5F4FA;
+    --family-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--family-font);
+    color: var(--main-color);
+    background-color: var(--white-color);
+}
+
+/*===== COMMON STYLES ====*/
+.link {
+    text-decoration: none;
+}
+
+span {
+    color: var(--hover-color);
+}
+
+.header-list-logo,
+.footer-link-logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+
+/*===== HEADER ====*/
+
+.header-list-logo {
+    color: var(--logo-color);
+}
+
+.header-list-item,
+.header-list-mail,
+.header-list-number {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+
+.header-list-mail,
+.header-list-number {
+    color:var(--second-color);
+}
+
+.header-list-link:hover,
+.header-list-link:focus {
+    color: var(--hover-color);
+}
+/*====== END HEADER =====*/
+
+/* ===== HEROE =====*/
+.heroe {
+    background-color: var(--heroe-footer-color);
+}
+
+.main-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.heroe-btn {
+    background-color: var(--hover-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    cursor: pointer;
+}
+/* ==== END HEROE =====*/
+
+/* ==== DESCRIPTION ====*/
+
+.description-head-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.description-text {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+}
+/* ==== END DESCRIPTION ====*/
+
+/* ==== ABOUT US ====*/
+.about-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.667;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* ==== END ABOUT US ====*/
+
+/* ==== OUT TEAM ====*/
+.team {
+    background-color: var(--team-color);
+}
+
+.team-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-list-item-name,
+.team-list-item-ocupation {
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+} 
+
+.team-list-item-name {
+    font-weight: 500;
+}
+
+.team-list-item-ocupation {
+   color: var(--second-color);
+}
+/* ==== END OUR TEAM ====*/
+
+/* ==== BUTTONS ====*/
+.button-list-item-btn {
+    background-color: var(--team-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.button-list-item-btn:hover {
+    background-color: var(--hover-color);
+    color: var(--white-color);
+    box-shadow: var(--second-color);
+}
+/* ==== END BUTTONS ==== */
+
+
+
+
+
+/* ==== FOOTER ==== */
+.footer {
+    background-color: var(--heroe-footer-color);
+}
+
+.footer-link-logo {
+   color:var(--white-color);
+}
+
+.address-list-street,
+.address-list-item-mail,
+.address-list-item-tel {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+}
+
+.address-list-street {
+    color: var(--white-color);
+}
+
+.address-list-item-mail,
+.address-list-item-tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-list-item-mail:hover,
+.address-list-item-tel:hover {
+    color: var(--hover-color);
+}
+/* ==== END FOOTER ====*/
