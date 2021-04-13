@@ -19,6 +19,7 @@ body {
 /*===== COMMON STYLES ====*/
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
 .logo-span {
