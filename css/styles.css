@@ -198,21 +198,49 @@ img {
 /* ==== END DESCRIPTION ====*/
 
 /* ==== ABOUT US ====*/
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+
 .about-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.667;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 /* ==== END ABOUT US ====*/
 
 /* ==== OUT TEAM ====*/
+
+.team .container {
+  padding-bottom: 94px;
+}
+
 .team {
   background-color: var(--team-color);
 }
 
+.team-list-container {
+  width: 270px;
+  min-height: 368px;
+  background-color: var(--white-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-header {
+  padding-top: 94px;
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -229,10 +257,14 @@ img {
 
 .team-list-item-name {
   font-weight: 500;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .team-list-item-ocupation {
   color: var(--second-color);
+  padding-bottom: 30px;
+  margin-bottom: 0;
 }
 /* ==== END OUR TEAM ====*/
 
