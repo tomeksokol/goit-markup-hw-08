@@ -321,6 +321,8 @@ img {
   margin-bottom: 94px;
 }
 
+/*add padding, under pictures*/
+
 .portfolio-list-container {
   display: inline-flex;
   justify-content: space-between;
