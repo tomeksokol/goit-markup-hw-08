@@ -47,6 +47,11 @@ img {
   margin: 0 auto;
 }
 
+.section:nth-child(even) {
+  padding-top: 94px;
+  padding-bottom: 94px;
+ }
+
 /*===== COMMON STYLES ====*/
 .link {
   text-decoration: none;
@@ -157,7 +162,7 @@ img {
 
 .heroe-btn {
   width: 202px;
-  height: 50px;
+  min-height: 50px;
   margin-bottom: 200px;
   padding: 10px 42px;
   font-weight: 700;
@@ -184,8 +189,6 @@ img {
   display: inline-block;
   width: 268px;
   min-height: 101px;
-  margin-top: 94px;
-  margin-bottom: 94px;
   margin-left: 0;
   margin-right: 0;
 }
@@ -211,7 +214,7 @@ img {
 .about-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .about-header {
@@ -225,10 +228,6 @@ img {
 /* ==== END ABOUT US ====*/
 
 /* ==== OUT TEAM ====*/
-
-.team .container {
-  padding-bottom: 94px;
-}
 
 .team {
   background-color: var(--team-color);
@@ -248,7 +247,6 @@ img {
 }
 
 .team-header {
-  padding-top: 94px;
   padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -320,9 +318,11 @@ img {
   margin-bottom: 94px;
 }
 
-.portfolio-list-container {
-  border: solid 1px rgba(238, 238, 238, 1);
+.portfolio-list-container-description {
   margin-bottom: 30px;
+  border-left: solid 1px rgba(238, 238, 238, 1);
+  border-right: solid 1px rgba(238, 238, 238, 1);
+  border-bottom: solid 1px rgba(238, 238, 238, 1);
 }
 
 .portfolio-list-item-name {
