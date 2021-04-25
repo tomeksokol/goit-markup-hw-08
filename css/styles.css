@@ -118,6 +118,8 @@ img {
   letter-spacing: 0.02em;
 }
 
+
+
 .header-list-number {
   margin-left: 50px;
   margin-right: 10px;
@@ -128,15 +130,36 @@ img {
   color: var(--second-color);
 }
 
+
+.header-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
 .header-list-link:hover,
 .header-list-link:focus {
   color: var(--hover-color);
+}
+
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: var(--hover-color);
 }
 /*====== END HEADER =====*/
 
 /* ===== HEROE =====*/
 .heroe {
-  background-color: var(--heroe-footer-color);
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("/images/heroe/heroe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heroe .container {
