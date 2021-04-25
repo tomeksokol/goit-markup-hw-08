@@ -146,8 +146,7 @@ img {
   color: var(--hover-color);
 }
 
-.contact-icon:hover,
-.contact-icon:focus {
+.contact-icon:hover {
   fill: var(--hover-color);
 }
 /*====== END HEADER =====*/
@@ -219,6 +218,16 @@ img {
   min-height: 101px;
   margin-left: 0;
   margin-right: 0;
+}
+
+.description-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--team-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .description-head-item {
@@ -298,9 +307,42 @@ img {
 
 .team-list-item-ocupation {
   color: var(--second-color);
-  padding-bottom: 30px;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
+
+.team-soclial-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 18px;
+}
+
+/* .team-soclial-links-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.team-soclial-links-item-links {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: yellow;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: red;
+}
+
+
 /* ==== END OUR TEAM ====*/
 
 /* ==== BUTTONS ====*/
