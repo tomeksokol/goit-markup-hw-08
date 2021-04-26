@@ -356,6 +356,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .client-list {
@@ -368,21 +369,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  padding-bottom: 94px;
 }
 
 .client-list-item-logo {
   display: flex;
-  width: 160px;
-  height: 115px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  /* padding-top: 50px;
-  padding-bottom: 94px; */
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 /* .client-list-item-logo:hover {
