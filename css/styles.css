@@ -377,7 +377,7 @@ img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border: 1px solid #afb1b8;
+  border: 1px solid currentColor; /*do podmiany */
   border-radius: 4px;
 }
 
