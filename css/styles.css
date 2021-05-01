@@ -106,11 +106,31 @@ img {
   padding-bottom: 25px;
 }
 
-.header-list-item:not(:last-child) {
+.header-list-item-index:not(:last-child),
+.header-list-item-portfolio:not(:last-child) {
   margin-right: 46px;
 }
 
-.header-list-item,
+.header-list-item-index:nth-child(1),
+.header-list-item-portfolio:nth-child(2) {
+  position: relative;
+}
+
+.header-list-item-index:nth-child(1)::after,
+.header-list-item-portfolio:nth-child(2)::after {
+  position: absolute;
+  bottom: -32px;
+  
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-color);
+}
+
+.header-list-item-index,
+.header-list-item-portfolio,
 .header-list-mail,
 .header-list-number {
   font-weight: 500;
