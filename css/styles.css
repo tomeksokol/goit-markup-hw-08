@@ -642,8 +642,8 @@ img {
   -moz-box-shadow: 0px 2px 7px -3px rgba(0,0,0,0.72);
   
   animation-name: modal-window-animation-open;
-  animation-duration: 2000ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-duration: 1500ms;
+  animation-timing-function: linear;
 }
 
 .close-btn {
@@ -683,23 +683,58 @@ img {
 
 
 @keyframes modal-window-animation-open {
-  0% {
+ 0% {
+    transform: scale(0) translate(-50%,-50%);
     opacity: 0;
   }
 
-  25% {
-    opacity: 0.25;
+  10% {
+    transform: scale(0.1) translate(-50%,-50%);
+    opacity: 0.1;
+  }
+
+  20% {
+    transform: scale(0.2) translate(-50%,-50%);
+    opacity: 0.2;
+  }
+
+  30% {
+    transform: scale(0.3) translate(-50%,-50%);
+    opacity: 0.3;
+  }
+
+  40% {
+    transform: scale(0.4) translate(-50%,-50%);
+    opacity: 0.4;
   }
 
   50% {
+    transform: scale(0.5) translate(-50%,-50%);
     opacity: 0.5;
   }
 
-  75% {
-    opacity: 0.75;
+  60% {
+    transform: scale(0.6) translate(-50%,-50%);
+    opacity: 0.6;
+  }
+
+  70% {
+    transform: scale(0.7) translate(-50%,-50%);
+    opacity: 0.7;
+  }
+
+  80% {
+    transform: scale(0.8) translate(-50%,-50%);
+    opacity: 0.8;
+  }
+
+  90% {
+    transform: scale(0.9) translate(-50%,-50%);
+    opacity: 0.9;
   }
 
   100% {
+    transform: scale(1) translate(-50%,-50%);
     opacity: 1;
   }
 }
