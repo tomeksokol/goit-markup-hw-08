@@ -47,7 +47,7 @@
         <section class="heroe section">
             <div class="container">
                 <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button class="heroe-btn" type="button">Zamów usługe</button>              
+                <button class="heroe-btn" type="button" data-modal-open>Zamów usługe</button>              
             </div>
         </section>
 
@@ -429,4 +429,16 @@
             </div>
         </div>
     </footer>
-</body></html>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-window">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class="close-btn-img">
+                    <use href="images/icons/icons.svg#icon-modal-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
