@@ -520,6 +520,40 @@ img {
   color: var(--second-color);
 }
 
+.overlay-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-container:hover .overlay {
+ transform: translatey(0);
+}
+
+.overlay {
+  position: absolute;
+  display: block;
+  width: 370px;
+  height: 294px;
+  left: 0;
+  top: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.overlay-text {
+  padding-top: 49px;
+  padding-right: 45px;
+  padding-bottom: 49px;
+  padding-left: 24px; 
+
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
 /* ==== END PORTFOLIO ====*/
 
 /* ==== FOOTER ==== */
@@ -622,8 +656,8 @@ img {
   background-color: rgba(0,0,0,.2);
 
   /* animation-name: modal-window-animation-close;
-  animation-duration: 2000ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  animation-duration: 1500ms;
+  animation-timing-function: linear; */
 }
 
 .modal-window {
@@ -673,13 +707,18 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  
+  /* animation-name: modal-window-animation-close;
+  animation-duration: 1500ms;
+  animation-timing-function: linear; */
 }
 
-/* button[data-modal-close] {
+/* .backdrop .is-hidden {
   animation-name: modal-window-animation-close;
-  animation-duration: 2000ms;
+  animation-duration: 1500ms;
   animation-timing-function: linear;
 } */
+
 
 
 @keyframes modal-window-animation-open {
@@ -739,25 +778,61 @@ img {
   }
 }
 
-/* @keyframes modal-window-animation-close {
-  0% {
+@keyframes modal-window-animation-close {
+ 0% {
+    transform: scale(1) translate(-50%,-50%);
     opacity: 1;
   }
 
-  25% {
-    opacity: 0.75;
+  10% {
+    transform: scale(0.9) translate(-50%,-50%);
+    opacity: 0.9;
+  }
+
+  20% {
+    transform: scale(0.8) translate(-50%,-50%);
+    opacity: 0.8;
+  }
+
+  30% {
+    transform: scale(0.7) translate(-50%,-50%);
+    opacity: 0.7;
+  }
+
+  40% {
+    transform: scale(0.6) translate(-50%,-50%);
+    opacity: 0.6;
   }
 
   50% {
+    transform: scale(0.5) translate(-50%,-50%);
     opacity: 0.5;
   }
 
-  75% {
-    opacity: 0.25;
+  60% {
+    transform: scale(0.4) translate(-50%,-50%);
+    opacity: 0.4;
+  }
+
+  70% {
+    transform: scale(0.3) translate(-50%,-50%);
+    opacity: 0.3;
+  }
+
+  80% {
+    transform: scale(0.2) translate(-50%,-50%);
+    opacity: 0.2;
+  }
+
+  90% {
+    transform: scale(0.1) translate(-50%,-50%);
+    opacity: 0.1;
   }
 
   100% {
+    transform: scale(0) translate(-50%,-50%);
     opacity: 0;
   }
-} */
+}
+
 /* ===== END MODAL WINDOW ====*/
