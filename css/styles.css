@@ -263,6 +263,32 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+
+.about-list-item-container {
+  position: relative;
+}
+
+.about-list-item-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.about-list-item-container > .about-list-item-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  /* padding: 27px 90px; */
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+
 /* ==== END ABOUT US ====*/
 
 /* ==== OUT TEAM ====*/
@@ -575,6 +601,10 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,.2);
+
+  /* animation-name: modal-window-animation-close;
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-window {
@@ -591,10 +621,10 @@ img {
   box-shadow: 0px 2px 7px -3px rgba(0,0,0,0.72);
   -webkit-box-shadow: 0px 2px 7px -3px rgba(0,0,0,0.72);
   -moz-box-shadow: 0px 2px 7px -3px rgba(0,0,0,0.72);
-
   
-
-
+  animation-name: modal-window-animation-open;
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn {
@@ -617,7 +647,7 @@ img {
   height: 18px;
 
   margin: auto;
-  fill: var(--logo-color)
+  fill: var(--logo-color);
 }
 
 .is-hidden {
@@ -625,4 +655,55 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+
+/* button[data-modal-close] {
+  animation-name: modal-window-animation-close;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+} */
+
+
+@keyframes modal-window-animation-open {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes modal-window-animation-close {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.25;
+  }
+
+  100% {
+    opacity: 0;
+  }
+} */
 /* ===== END MODAL WINDOW ====*/
