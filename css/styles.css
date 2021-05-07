@@ -730,7 +730,7 @@ img {
 .form-name {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.150;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -805,7 +805,6 @@ textarea[placeholder="Wprowadź tekst"] {
   color: rgba(33, 150, 243, 1);
 }
 
-
 /* .form-label-policy-check:checked {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -838,6 +837,5 @@ textarea[placeholder="Wprowadź tekst"] {
   border-radius: 4px;
   cursor: pointer;
 }
-
 
 /*==== END FORMS ====*/
