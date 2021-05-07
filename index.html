@@ -446,6 +446,33 @@
                     <use href="images/icons/icons.svg#icon-modal-close"></use>
                 </svg>
             </button>
+
+            <form name="contact-form">
+                <div class="contact-form-container">
+                    <p class="form-name">Zostaw swoje dane w formularzu poniżej</p>
+                    <div class="contact-form-container-text">
+                        <label class="form-label-name"><span>Imię</span>
+                            <input type="text" name="name">
+                        </label>
+                        <label class="form-label-tel"><span>Telefon</span>
+                            <input type="text" name="tel">
+                        </label>
+                        <label class="form-label-email"><span>Email</span>
+                            <input type="email" name="email">
+                        </label>
+                        <label class="form-label-feedback"><span>Komentarz</span>
+                            <textarea name="feedback" rows="8" placeholder="Wprowadź tekst"></textarea>
+                        </label>
+                    </div>
+                    
+                    <label class="form-label-policy">
+                        <input type="checkbox" name="policy">
+                    <span>Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></span>
+                    </label>
+                    <button class="form-btn" type="submit">Wyślij</button>
+                </div>
+            </form>
+
         </div>
     </div>
     <script src="./js/modal.js"></script>
