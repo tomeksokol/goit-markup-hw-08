@@ -736,11 +736,38 @@ img {
   color: #212121;
   margin-top: 40px;
   /* margin-bottom: 12px; */
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 }
 
 label {
   display: block;
+}
+
+.form-input-name,
+.form-input-tel,
+.form-input-email {
+  box-sizing: border-box;
+  padding-left: 42px;
+}
+
+.form-label-name,
+.form-label-tel,
+.form-label-email {
+  position: relative;
+}
+
+.form-icon-name {
+  position: absolute;
+  display: block;
+  top: 30px;
+  left: 12px;
+}
+
+.form-icon-tel {
+  position: absolute;
+  display: block;
+  top: 30px;
+  left: 12px;
 }
 
 .contact-form-container-text {
@@ -786,9 +813,6 @@ textarea[placeholder="Wprowadź tekst"] {
   color: rgba(117, 117, 117, 0.5);
   padding: 12px 16px;
 }
-
-
-
 
 .contact-form-container-checkbox {
   display: block;
