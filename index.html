@@ -447,7 +447,7 @@
                 </svg>
             </button>
 
-            <form name="contact-form">
+            <form method="POST" name="contact-form" class="contact-form">
                 <div class="contact-form-container">
                     <p class="form-name">Zostaw swoje dane w formularzu poniżej</p>
                     <div class="contact-form-container-text">
@@ -465,12 +465,12 @@
                         </label>
                         <label class="form-label-email"><span>Email</span>
                             <input class="form-input-email" type="email" name="email">
-                            <svg class="form-icon-tel" width="18px" height="18px">
+                            <svg class="form-icon-email" width="18px" height="18px">
                                 <use href="images/icons/icons.svg#icon-form-email"></use>
                             </svg>
                         </label>
                         <label class="form-label-feedback"><span>Komentarz</span>
-                            <textarea name="feedback" rows="8" placeholder="Wprowadź tekst"></textarea>
+                            <textarea class="form-input-textarea" type="text" name="feedback" rows="8" placeholder="Wprowadź tekst"></textarea>
                         </label>
                     </div>
                     <div class="contact-form-container-checkbox">

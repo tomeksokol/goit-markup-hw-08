@@ -748,19 +748,43 @@ label {
 .form-input-email {
   box-sizing: border-box;
   padding-left: 42px;
+
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
 }
+
+.form-input-name {
+  text-transform: capitalize;
+}
+
+.form-input-name:focus,
+.form-input-tel:focus,
+.form-input-email:focus,
+.form-input-textarea:focus {
+  outline: none;
+  border-color: var(--hover-color);
+}
+
+/* svg color change after focus in input */
+.form-input-name:focus + .form-icon-name,
+.form-input-tel:focus + .form-icon-tel,
+.form-input-email:focus + .form-icon-email {
+  fill: var(--hover-color);
+}
+
 /*input border color*/
 
-.form-input-name:active,
+/* .form-input-name:active,
 .form-input-name:focus,
 .form-input-name:hover {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  
+  border-color: var(--hover-color);
   border: 1px solid var(--hover-color);
   border-radius: 4px;
-}
+} */
 
 .form-label-name,
 .form-label-tel,
@@ -776,6 +800,13 @@ label {
 }
 
 .form-icon-tel {
+  position: absolute;
+  display: block;
+  top: 30px;
+  left: 12px;
+}
+
+.form-icon-email {
   position: absolute;
   display: block;
   top: 30px;
