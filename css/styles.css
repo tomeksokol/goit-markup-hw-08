@@ -659,6 +659,36 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-right-side-newsletter {
+  display: flex;
+  flex-direction: column;
+  margin-left: 78px;
+}
+
+.footer-right-side-newsletter-text {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.footer-form-email {
+  box-sizing: border-box;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
 /* ==== END FOOTER ====*/
 
 /* ==== MODAL WINDOW ====*/
