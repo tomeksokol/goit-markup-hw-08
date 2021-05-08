@@ -749,6 +749,18 @@ label {
   box-sizing: border-box;
   padding-left: 42px;
 }
+/*input border color*/
+
+.form-input-name:active,
+.form-input-name:focus,
+.form-input-name:hover {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  
+  border: 1px solid var(--hover-color);
+  border-radius: 4px;
+}
 
 .form-label-name,
 .form-label-tel,
@@ -833,6 +845,15 @@ textarea[placeholder="Wprowadź tekst"] {
   color: rgba(33, 150, 243, 1);
 }
 
+/* .form-label-policy-check {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: red;
+  border-color: 1px solid black;
+  
+} */
+
 /* .form-label-policy-check:checked {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -840,6 +861,7 @@ textarea[placeholder="Wprowadź tekst"] {
 
   background-color: red;
   color: black;
+  border: 6px solid darkred;
   outline: none;
 } */
 
