@@ -828,6 +828,7 @@ label {
 .form-input-textarea:focus {
   outline: none;
   border-color: var(--hover-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* svg color change after focus in input */
@@ -835,20 +836,8 @@ label {
 .form-input-tel:focus + .form-icon-tel,
 .form-input-email:focus + .form-icon-email {
   fill: var(--hover-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/*input border color*/
-
-/* .form-input-name:active,
-.form-input-name:focus,
-.form-input-name:hover {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  border-color: var(--hover-color);
-  border: 1px solid var(--hover-color);
-  border-radius: 4px;
-} */
 
 .form-label-name,
 .form-label-tel,
@@ -928,7 +917,6 @@ textarea[placeholder="Wprowadź tekst"] {
   margin: 0 auto;
   padding-bottom: 40px;
 
-
   /* margin-top: 20px; */
   /* margin-bottom: 30px;
   margin-left: 55px; */
@@ -962,11 +950,11 @@ textarea[placeholder="Wprowadź tekst"] {
   border-radius: 2px;
 }
 
-.form-label-policy-check:checked + .form-label-policy-text::before{
+.form-label-policy-check:checked + .form-label-policy-text::before {
   background-color: var(--hover-color);
   border-radius: 2px;
   border: 2px solid transparent;
-  background-image:url(/images/icons/checkbox.svg);
+  background-image: url(./images/icons/checkbox.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
