@@ -446,10 +446,8 @@
                                 <use href="images/icons/icons.svg#icon-form-send"></use>
                             </svg>
                         </button>
-
                     </form>
                 </div>
-
             </div>
         </div>
     </footer>
@@ -489,12 +487,13 @@
                         </label>
                     </div>
                     <div class="contact-form-container-checkbox">
-                        <label class="form-label-policy">
-                            <input type="checkbox" name="policy" class="form-label-policy-check">
-                        <span>Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></span>
-                        </label>
+                            <input type="checkbox" name="policy" class="form-label-policy-check visually-hidden" id="policy-check">
+                            <label for="policy-check" class="form-label-policy-text">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
+                            </label>
+                        
+                        <button class="form-btn" type="submit">Wyślij</button>
                     </div>
-                    <button class="form-btn" type="submit">Wyślij</button>
+                    
                 </div>
             </form>
 

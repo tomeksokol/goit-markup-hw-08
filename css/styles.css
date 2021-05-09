@@ -922,43 +922,65 @@ textarea[placeholder="Wprowadź tekst"] {
 }
 
 .contact-form-container-checkbox {
+  position: relative;
   display: block;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-left: 55px;
+  width: 448px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+
+
+  /* margin-top: 20px; */
+  /* margin-bottom: 30px;
+  margin-left: 55px; */
 }
 
-.contact-form-container-checkbox span {
+.form-label-policy-text {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 7px;
+  padding-top: 20px;
+  /* padding-left: 40px; */
+  padding-bottom: 30px;
+  margin-left: 35px;
 }
 
 .contact-form-container-checkbox a {
   color: rgba(33, 150, 243, 1);
 }
 
-/* .form-label-policy-check {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: red;
-  border-color: 1px solid black;
-  
-} */
+.form-label-policy-text::before {
+  position: absolute;
+  top: 22px;
+  left: 12px;
 
-/* .form-label-policy-check:checked {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
+  display: inline-block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
 
-  background-color: red;
-  color: black;
-  border: 6px solid darkred;
-  outline: none;
-} */
+.form-label-policy-check:checked + .form-label-policy-text::before{
+  background-color: var(--hover-color);
+  border-radius: 2px;
+  border: 2px solid transparent;
+  background-image:url(/images/icons/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 
 .form-btn {
   display: flex;
@@ -966,9 +988,10 @@ textarea[placeholder="Wprowadź tekst"] {
   width: 200px;
   min-height: 50px;
   padding: 10px 76px;
-  margin-bottom: 40px;
+  margin: auto;
+  /* margin-bottom: 40px;
   margin-left: 164px;
-  margin-right: 164px;
+  margin-right: 164px; */
 
   font-weight: 700;
   font-size: 16px;
