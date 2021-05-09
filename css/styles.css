@@ -954,7 +954,7 @@ textarea[placeholder="Wprowadź tekst"] {
   background-color: var(--hover-color);
   border-radius: 2px;
   border: 2px solid transparent;
-  background-image: url(./images/icons/checkbox.svg);
+  background-image: url("../images/icons/checkbox.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
