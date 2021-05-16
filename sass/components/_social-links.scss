@@ -1,0 +1,65 @@
+.team-soclial-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 18px;
+}
+
+.team-soclial-links-item-links {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.team-soclial-links-item-links:hover,
+.team-soclial-links-item-links:focus {
+  fill: var(--white-color);
+  background-color: var(--hover-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons:hover,
+.social-icons:focus {
+  fill: var(--white-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* footer links */
+
+.contact-soclial-links {
+  display: flex;
+}
+
+.contact-soclial-links-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.contact-soclial-links-item-links {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: #474852;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: var(--white-color);
+}
+
+.contact-soclial-links-item-links:hover,
+.contact-soclial-links-item-links:focus {
+  fill: var(--white-color);
+  background-color: var(--hover-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

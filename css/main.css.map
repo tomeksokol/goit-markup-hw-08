@@ -10,7 +10,7 @@
         "../sass/base/_section.scss",
         "../sass/components/_logo.scss",
         "../sass/components/_backdrop.scss",
-        "../sass/components/_modal.scss",
+        "../sass/components/_modal-win.scss",
         "../sass/components/_modal-btn.scss"
     ],
     "names": [],
