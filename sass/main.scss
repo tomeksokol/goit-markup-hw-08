@@ -1,6 +1,6 @@
 @import "./utils/variables";
-
 @import "./utils/visually-hidden";
+
 @import "./base/common";
 @import "./base/container";
 @import "./base/section";
@@ -12,5 +12,11 @@
 @import "./components/social-links";
 @import "./components/grid";
 
-
-
+@import "./layout/header";
+@import "./layout/heroe";
+@import "./layout/description";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/form";
