@@ -1,22 +1,27 @@
-.logo-span {
-  color: var(--hover-color);
-}
 
-.header-nav-logo,
-.footer-link-logo {
+
+.logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-}
 
-.header-nav-logo {
+  &--dark {
   margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
+  color: var(--logo-color);
+  }
+
+  &--light {
+  color: var(--white-color);
+  }
+
+  &--accent {
+  color: var(--hover-color);
+  }
 }
 
-.footer-link-logo {
-  color: var(--white-color);
-}
+
+
