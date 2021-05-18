@@ -1,52 +1,49 @@
 .contact {
   background-color: var(--heroe-footer-color);
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
-.contact .container {
-  display: block;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-
-
-.address-list-street,
-.address-list-item-mail,
-.address-list-item-tel {
+.address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
 }
 
-.address-list-street {
+.address__street {
   padding-top: 20px;
   padding-bottom: 9px;
   color: var(--white-color);
 }
 
-.address-list-item-tel {
+.address__tel--link {
   display: block;
   margin-top: 9px;
 }
 
-.address-list-item-mail,
-.address-list-item-tel {
+.address__mail--link,
+.address__tel--link {
   color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:hover {
+    color: var(--hover-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.address-list-item-mail:hover,
-.address-list-item-tel:hover {
-  color: var(--hover-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.contact--right-side {
+  margin-left: 70px;
+  padding-top: 15px;
 }
 
-.contact .container {
-  display: flex;
-  align-items: flex-start;
-}
-
-.contact-right-side-text {
+.contact__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -56,45 +53,20 @@
   margin-bottom: 20px;
 }
 
-.contact-right-side {
-  margin-left: 70px;
-  padding-top: 15px;
-}
-
-
-
-.footer-right-side-newsletter {
+.newsletter {
   display: flex;
   flex-direction: column;
   margin-left: 78px;
   padding-top: 15px;
-}
 
-.footer-right-side-newsletter-text {
-  display: block;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  margin-bottom: 20px;
-}
-
-.footer-form-email {
-  box-sizing: border-box;
-  padding-left: 16px;
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  &__text {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+  }
 }
