@@ -464,31 +464,31 @@
                 <div class="contact-form-container">
                     <p class="form__name">Zostaw swoje dane w formularzu poniżej</p>
                     <div class="form-container__text">
-                        <label class="label label--position"><span>Imię</span>
-                            <input class="form-input-name" type="text" name="name" required>
-                            <svg class="form-icon-name" width="18px" height="18px">
+                        <label class="form__label form__label--position"><span class="form__text">Imię</span>
+                            <input class="form__input form__input--name" type="text" name="name" required>
+                            <svg class="form__icon form__icon--name" width="18px" height="18px">
                                 <use href="images/icons/icons.svg#icon-form-name"></use>
                             </svg>
                         </label>
-                        <label class="label label--position"><span>Telefon</span>
-                            <input class="form-input-tel" type="text" name="tel" required>
-                            <svg class="form-icon-tel" width="18px" height="18px">
+                        <label class="form__label form__label--position"><span class="form__text">Telefon</span>
+                            <input class="form__input form__input--tel" type="text" name="tel" required>
+                            <svg class="form__icon form__icon--tel" width="18px" height="18px">
                                 <use href="images/icons/icons.svg#icon-form-tel"></use>
                             </svg>
                         </label>
-                        <label class="label label--position"><span>Email</span>
-                            <input class="form-input-email" type="email" name="email" required>
-                            <svg class="form-icon-email" width="18px" height="18px">
+                        <label class="form__label form__label--position"><span class="form__text">Email</span>
+                            <input class="form__input form__input--mail" type="email" name="email" required>
+                            <svg class="form__icon form__icon--mail" width="18px" height="18px">
                                 <use href="images/icons/icons.svg#icon-form-email"></use>
                             </svg>
                         </label>
-                        <label class="label form-label-feedback"><span>Komentarz</span>
-                            <textarea class="form-input-textarea" type="text" name="feedback" rows="8" placeholder="Wprowadź tekst"></textarea>
+                        <label class="form__label form-label-feedback"><span class="form__text">Komentarz</span>
+                            <textarea class="form__textarea" type="text" name="feedback" rows="8" placeholder="Wprowadź tekst"></textarea>
                         </label>
                     </div>
                     <div class="form-container__checkbox">
-                            <input type="checkbox" name="policy" class="form-label-policy-check visually-hidden" id="policy-check" required>
-                            <label for="policy-check" class="label form-label-policy-text">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
+                            <input type="checkbox" name="policy" class="form__policy-check visually-hidden" id="policy-check" required>
+                            <label for="policy-check" class="form__label form__policy-text">Oświadczam iż akceptuję <a class="link" href="#"><span class="form__policy-text--accent">Regulamin</span></a> i <a class="link" href="#"><span class="form__policy-text--accent">Politykę Prywatności.</span></a>
                             </label>
                         
                         <button class="btn btn-form" type="submit">Wyślij</button>
