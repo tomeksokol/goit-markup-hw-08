@@ -1,9 +1,9 @@
-.description-list {
+.description__list {
   display: flex;
   justify-content: space-between;
 }
 
-.description-list-item {
+.description__item {
   display: inline-block;
   width: 268px;
   min-height: 101px;
@@ -11,7 +11,7 @@
   margin-right: 0;
 }
 
-.description-icon-container {
+.description__icons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,15 +21,16 @@
   margin-bottom: 30px;
 }
 
-.description-head-item {
+.description__head {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.description-text {
+.description__text {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;

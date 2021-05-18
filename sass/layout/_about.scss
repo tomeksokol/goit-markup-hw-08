@@ -1,10 +1,10 @@
-.about-list {
+.about__list {
   display: flex;
   justify-content: space-between;
   padding-bottom: 94px;
 }
 
-.about-header {
+.about__header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.667;
@@ -13,11 +13,11 @@
   margin-bottom: 50px;
 }
 
-.about-list-item-container {
+.about__container {
   position: relative;
 }
 
-.about-list-item-text {
+.about__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -27,7 +27,7 @@
   color: var(--white-color);
 }
 
-.about-list-item-container > .about-list-item-text-cont {
+.about__container > .about__container-text {
   position: absolute;
   bottom: 0;
   right: 0;
