@@ -8,18 +8,18 @@
   letter-spacing: 0.03em;
 
   &--dark {
-  margin-right: 93px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  color: var(--logo-color);
+    margin-right: 93px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: var(--logo-color);
   }
 
   &--light {
-  color: var(--white-color);
+    color: var(--white-color);
   }
 
   &--accent {
-  color: var(--hover-color);
+    color: var(--hover-color);
   }
 }
 

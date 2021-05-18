@@ -46,8 +46,8 @@
         <!--HEROE-->
         <section class="heroe section">
             <div class="container">
-                <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button class="heroe-btn" type="button" data-modal-open>Zamów usługe</button>              
+                <h1 class="heroe__main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+                <button class="btn btn-modal" type="button" data-modal-open>Zamów usługe</button>              
             </div>
         </section>
 
@@ -441,8 +441,8 @@
                 <div class="footer-form">
                     <form method="post">
                         <input class="footer-form-email" type="email" name="newsletter-mail" placeholder="E-mail">
-                        <button class="footer-btn" type="submit">Zapisz się
-                            <svg class="footer-btn-icon" width="24px" height="24px">
+                        <button class="btn btn-newsletter" type="submit">Zapisz się
+                            <svg class="btn-newsletter__icon" width="24px" height="24px">
                                 <use href="images/icons/icons.svg#icon-form-send"></use>
                             </svg>
                         </button>
@@ -454,44 +454,44 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
-            <button type="button" class="close-btn" data-modal-close>
-                <svg class="close-btn-img">
+            <button type="button" class="btn-close" data-modal-close>
+                <svg class="btn-close__img">
                     <use href="images/icons/icons.svg#icon-modal-close"></use>
                 </svg>
             </button>
 
             <form method="POST" name="contact-form" class="contact-form">
                 <div class="contact-form-container">
-                    <p class="form-name">Zostaw swoje dane w formularzu poniżej</p>
-                    <div class="contact-form-container-text">
-                        <label class="form-label-name"><span>Imię</span>
+                    <p class="form__name">Zostaw swoje dane w formularzu poniżej</p>
+                    <div class="form-container__text">
+                        <label class="label label--position"><span>Imię</span>
                             <input class="form-input-name" type="text" name="name" required>
                             <svg class="form-icon-name" width="18px" height="18px">
                                 <use href="images/icons/icons.svg#icon-form-name"></use>
                             </svg>
                         </label>
-                        <label class="form-label-tel"><span>Telefon</span>
+                        <label class="label label--position"><span>Telefon</span>
                             <input class="form-input-tel" type="text" name="tel" required>
                             <svg class="form-icon-tel" width="18px" height="18px">
                                 <use href="images/icons/icons.svg#icon-form-tel"></use>
                             </svg>
                         </label>
-                        <label class="form-label-email"><span>Email</span>
+                        <label class="label label--position"><span>Email</span>
                             <input class="form-input-email" type="email" name="email" required>
                             <svg class="form-icon-email" width="18px" height="18px">
                                 <use href="images/icons/icons.svg#icon-form-email"></use>
                             </svg>
                         </label>
-                        <label class="form-label-feedback"><span>Komentarz</span>
+                        <label class="label form-label-feedback"><span>Komentarz</span>
                             <textarea class="form-input-textarea" type="text" name="feedback" rows="8" placeholder="Wprowadź tekst"></textarea>
                         </label>
                     </div>
-                    <div class="contact-form-container-checkbox">
+                    <div class="form-container__checkbox">
                             <input type="checkbox" name="policy" class="form-label-policy-check visually-hidden" id="policy-check" required>
-                            <label for="policy-check" class="form-label-policy-text">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
+                            <label for="policy-check" class="label form-label-policy-text">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
                             </label>
                         
-                        <button class="form-btn" type="submit">Wyślij</button>
+                        <button class="btn btn-form" type="submit">Wyślij</button>
                     </div>
                     
                 </div>
