@@ -1,27 +1,22 @@
-
-
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-
-  &--dark {
-    margin-right: 93px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    color: var(--logo-color);
-  }
-
-  &--light {
-    color: var(--white-color);
-  }
-
-  &--accent {
-    color: var(--hover-color);
-  }
 }
 
+.logo--dark {
+  margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: var(--logo-color);
+}
 
+.logo--light {
+  color: var(--white-color);
+}
 
+.logo--accent {
+  color: var(--hover-color);
+}

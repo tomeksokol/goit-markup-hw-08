@@ -22,13 +22,8 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  /*footer*/
-  &--margin {
-    margin-right: 10px;
-  }
 }
-
+  
 .social-links__link--white-theme {
   fill: #afb1b8;
 }
@@ -52,4 +47,8 @@
 
 .social-links-footer {
   display: flex;
+}
+
+.social-links__link--margin {
+  margin-right: 10px;
 }

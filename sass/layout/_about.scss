@@ -27,13 +27,15 @@
   color: var(--white-color);
 }
 
-.about__container > .about__container-text {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0;
-  width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background-color: rgba(47, 48, 58, 0.8);
+.about__container {
+  .about__container-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }

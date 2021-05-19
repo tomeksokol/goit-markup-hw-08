@@ -11,32 +11,34 @@
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-
-  &-modal {
-    display: flex;
-    margin-bottom: 200px;
-    padding: 10px 42px;
-  }
-
-  &-form {
-    display: flex;
-    justify-content: center;
-    padding: 10px 76px;
-    margin: auto;
-  }
 }
+
+.btn-modal {
+  display: flex;
+  margin-bottom: 200px;
+  padding: 10px 42px;
+}
+
+.btn-form {
+  display: flex;
+  justify-content: center;
+  padding: 10px 76px;
+  margin: auto;
+}
+
 
 .btn-newsletter {
   display: inline-flex;
   align-items: center;
   margin-left: 12px;
   padding-left: 42px;
-
-  &__icon {
-    display: block;
-    padding-left: 24px;
-  }
 }
+
+.btn-newsletter__icon {
+  display: block;
+  padding-left: 24px;
+}
+
 
 /* portfolio buttons */
 
@@ -47,11 +49,12 @@
   justify-content: center;
   padding-bottom: 50px;
   }
-
-  &__item {
-    display: inline-block;
-  }
 }
+
+.buttons__item {
+  display: inline-block;
+}
+
 
 .buttons__btn {
   font-weight: 500;
@@ -94,12 +97,12 @@
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
 
-  &__img {
-    width: 18px;
-    height: 18px;
-    margin: auto;
-    fill: var(--logo-color);
-  }
+.btn-close__img {
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  fill: var(--logo-color);
 }
 
