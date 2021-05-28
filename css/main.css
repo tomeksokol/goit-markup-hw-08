@@ -4,7 +4,7 @@
   --hover-color: #2196f3;
   --white-color: #ffffff;
   --logo-color: #000000;
-  --heroe-footer-color: #2f303a;
+  --hero-footer-color: #2f303a;
   --team-color: #f5f4fa;
   --family-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -239,17 +239,12 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  /*footer*/
 }
 
 .social-links__link:hover, .social-links__link:focus {
   fill: var(--white-color);
   background-color: var(--hover-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-links__link--margin {
-  margin-right: 10px;
 }
 
 .social-links__link--white-theme {
@@ -273,6 +268,10 @@ img {
 /* footer links */
 .social-links-footer {
   display: flex;
+}
+
+.social-links__link--margin {
+  margin-right: 10px;
 }
 
 .header .container {
@@ -358,13 +357,13 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.heroe {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heroe/heroe.jpg");
+.hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.heroe .container {
+.hero .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -372,7 +371,7 @@ img {
   flex-direction: column;
 }
 
-.heroe__main-header {
+.hero__main-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -457,7 +456,7 @@ img {
   color: var(--white-color);
 }
 
-.about__container > .about__container-text {
+.about__container .about__container-text {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -553,7 +552,7 @@ img {
 }
 
 .contact {
-  background-color: var(--heroe-footer-color);
+  background-color: var(--hero-footer-color);
 }
 
 .contact .container {
@@ -662,10 +661,6 @@ img {
   margin-bottom: 10px;
 }
 
-.form__input--name {
-  text-transform: capitalize;
-}
-
 .form__input:focus {
   outline: none;
   border-color: var(--hover-color);
@@ -676,6 +671,10 @@ img {
 .form__input:focus + .form__icon {
   fill: var(--hover-color);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input--name {
+  text-transform: capitalize;
 }
 
 .form__textarea {
