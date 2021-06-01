@@ -13,6 +13,16 @@
 }
 
 @media screen and (min-width: 320px) {
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu__icons {
+    cursor: pointer;
+  }
+
   .navigation__list,
   .header__contact {
     display: none;
@@ -24,6 +34,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .menu__icons {
+      display: none;
+    }
   }
 
   .navigation {
@@ -95,6 +109,22 @@
 @media screen and (min-width: 1200px) {
   .navigation__item--margin {
     margin-right: 46px;
+    margin-bottom: 10px;
+  }
+
+  .navigation__item--accent::after {
+    bottom: -39px;
+  }
+
+  .header__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.143;
+  }
+
+  .header__number {
     margin-bottom: 10px;
   }
 }

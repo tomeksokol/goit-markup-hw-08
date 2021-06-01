@@ -13,11 +13,23 @@
   cursor: pointer;
 }
 
-.btn-modal {
-  display: flex;
-  margin-bottom: 200px;
-  padding: 10px 42px;
+@media screen and (min-width: 320px) {
+  .btn-modal {
+    display: flex;
+    justify-content: center;
+    // margin-top: 26px;
+    // margin-bottom: 118px;
+    padding: 10px 42px;
+    margin: 30px auto 118px;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .btn-modal {
+    margin: 30px auto 200px;
+  }
+}
+
 
 .btn-form {
   display: flex;
@@ -27,82 +39,81 @@
 }
 
 
-.btn-newsletter {
-  display: inline-flex;
-  align-items: center;
-  margin-left: 12px;
-  padding-left: 42px;
-}
+// .btn-newsletter {
+//   display: inline-flex;
+//   align-items: center;
+//   margin-left: 12px;
+//   padding-left: 42px;
+// }
 
-.btn-newsletter__icon {
-  display: block;
-  padding-left: 24px;
-}
-
-
-/* portfolio buttons */
-
-.buttons {
-  .container {
-  display: flex;
-  padding-top: 94px;
-  justify-content: center;
-  padding-bottom: 50px;
-  }
-}
-
-.buttons__item {
-  display: inline-block;
-}
+// .btn-newsletter__icon {
+//   display: block;
+//   padding-left: 24px;
+// }
 
 
-.buttons__btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  text-align: center;
-  letter-spacing: 0.03em;
-  background-color: var(--team-color);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 6px 22px;
-  margin-right: 8px;
+// /* portfolio buttons */
 
-  &:hover,
-  &:focus {
-    background-color: var(--hover-color);
-    color: var(--white-color);
-    box-shadow: 0px 3px 3px 0px rgba(184, 178, 178, 0.7);
-    -webkit-box-shadow: 0px 3px 3px 0px rgba(184, 178, 178, 0.7);
-    -moz-box-shadow: 0px 3px 3px 0px rgba(184, 178, 178, 0.7);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
+// .buttons {
+//   .container {
+//   display: flex;
+//   padding-top: 94px;
+//   justify-content: center;
+//   padding-bottom: 50px;
+//   }
+// }
 
-/* modal-window close button */
+// .buttons__item {
+//   display: inline-block;
+// }
 
-.btn-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
 
-  display: flex;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+// .buttons__btn {
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.625;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   background-color: var(--team-color);
+//   border: none;
+//   border-radius: 4px;
+//   cursor: pointer;
+//   padding: 6px 22px;
+//   margin-right: 8px;
 
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
+//   &:hover,
+//   &:focus {
+//     background-color: var(--hover-color);
+//     color: var(--white-color);
+//     box-shadow: 0px 3px 3px 0px rgba(184, 178, 178, 0.7);
+//     -webkit-box-shadow: 0px 3px 3px 0px rgba(184, 178, 178, 0.7);
+//     -moz-box-shadow: 0px 3px 3px 0px rgba(184, 178, 178, 0.7);
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
 
-.btn-close__img {
-  width: 18px;
-  height: 18px;
-  margin: auto;
-  fill: var(--logo-color);
-}
+// /* modal-window close button */
 
+// .btn-close {
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+
+//   display: flex;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+
+//   background-color: transparent;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   cursor: pointer;
+// }
+
+// .btn-close__img {
+//   width: 18px;
+//   height: 18px;
+//   margin: auto;
+//   fill: var(--logo-color);
+// }
