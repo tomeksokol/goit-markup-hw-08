@@ -85,9 +85,17 @@ img {
   }
 }
 
-.section:nth-child(even) {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .section:nth-child(even) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .logo {
@@ -481,6 +489,94 @@ img {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .description .container {
+    display: flex;
+  }
+  .description__list {
+    display: block;
+    margin: 0 auto;
+  }
+  .description__item {
+    display: block;
+    width: calc(100vw - 30px);
+    min-height: 120px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .description__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--team-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  }
+  .description__head {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .description__text {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .description__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .description__item {
+    display: inline-block;
+    width: calc((95vw - 2em) / 2);
+  }
+  .description__item:nth-child(1) {
+    margin-right: 30px;
+  }
+  .description__item:nth-child(3) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .description__list {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .description__item {
+    width: 268px;
+    min-height: 101px;
+  }
+  .description__item:nth-child(2) {
+    margin-right: 30px;
+  }
+  .description__head {
+    text-align: left;
+  }
+}
+
+/*
 .description__list {
   display: flex;
   justify-content: space-between;
@@ -519,7 +615,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
-
+*/
 .about__list {
   display: flex;
   justify-content: space-between;
