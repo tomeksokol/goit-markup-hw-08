@@ -94,26 +94,24 @@
 //   }
 // }
 
-// /* modal-window close button */
+ /* modal-window close button */
 
-// .btn-close {
-//   position: absolute;
-//   top: 8px;
-//   right: 8px;
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
 
-//   display: flex;
-//   width: 30px;
-//   height: 30px;
-//   border-radius: 50%;
-
-//   background-color: transparent;
-//   border: 1px solid rgba(0, 0, 0, 0.1);
-//   cursor: pointer;
-// }
-
-// .btn-close__img {
-//   width: 18px;
-//   height: 18px;
-//   margin: auto;
-//   fill: var(--logo-color);
-// }
+.btn-close__img {
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  fill: var(--logo-color);
+}
