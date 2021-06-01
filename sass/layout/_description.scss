@@ -1,3 +1,44 @@
+@media screen and (min-width: 320px) {
+  .description__list {
+    display: block;
+  }
+
+  .description__item {
+    display: block;
+    width: 268px;
+    min-height: 101px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .description__icons {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--team-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  }
+
+  .description__head {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .description__text {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+  }
+}
+
+/*
 .description__list {
   display: flex;
   justify-content: space-between;

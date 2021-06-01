@@ -1,4 +1,6 @@
-.section:nth-child(even) {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 320px) {
+  .section:nth-child(even) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
