@@ -682,7 +682,7 @@ img {
 
 @media screen and (min-width: 320px) {
   .team__container {
-    width: calc(100vw - 30px);
+    width: 450px;
     min-height: 368px;
     background-color: var(--white-color);
     border-end-end-radius: 4px;
@@ -718,7 +718,27 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team .container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .team__container {
+    width: 354px;
+    margin-bottom: 30px;
+  }
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  .team__container {
+    width: 270px;
+  }
   .team__header {
     font-size: 36px;
     line-height: 1.167;
