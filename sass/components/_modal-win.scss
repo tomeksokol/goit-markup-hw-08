@@ -74,6 +74,22 @@
     letter-spacing: 0.02em;
     color: var(--icon-color);
   }
+
+  .menu-social__list {
+    display: flex;
+    padding-left: 40px;
+    justify-content: flex-start;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222px;
+    letter-spacing: 0.02em;
+    color: var(--hover-color);
+  }
+
+  .menu-social__item {
+    margin-right: 20px;
+  }
 }
 
 @media screen and (min-width: 480px) {

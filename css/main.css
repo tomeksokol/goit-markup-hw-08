@@ -219,6 +219,17 @@ img {
     letter-spacing: 0.02em;
     color: var(--icon-color);
   }
+  .menu-social__list {
+    display: flex;
+    padding-left: 40px;
+    justify-content: flex-start;
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222px;
+    letter-spacing: 0.02em;
+    color: var(--hover-color);
+  }
 }
 
 @media screen and (min-width: 480px) {
