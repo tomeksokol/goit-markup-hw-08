@@ -22,6 +22,20 @@
     padding: 10px 42px;
     margin: 30px auto 118px;
   }
+
+  .btn-newsletter {
+   display: inline-flex;
+   align-items: center;
+   margin-left: 0px;
+   padding-left: 42px;
+   margin-bottom: 60px;
+ }
+
+ .btn-newsletter__icon {
+   display: block;
+   padding-left: 24px;
+ }
+
 }
 
 @media screen and (min-width: 1200px) {

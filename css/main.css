@@ -225,6 +225,17 @@ img {
     padding: 10px 42px;
     margin: 30px auto 118px;
   }
+  .btn-newsletter {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0px;
+    padding-left: 42px;
+    margin-bottom: 60px;
+  }
+  .btn-newsletter__icon {
+    display: block;
+    padding-left: 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -968,6 +979,7 @@ img {
   .contact .container {
     display: block;
     padding-top: 60px;
+    padding-bottom: 0px;
     margin: 0 auto;
     text-align: center;
   }
@@ -1022,6 +1034,42 @@ img {
     color: var(--white-color);
     margin-bottom: 20px;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container--tablet {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .contact--right-side {
+    margin-top: 0px;
+  }
+  .newsletter__text {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact .container {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .contact--right-side {
+    margin-left: 70px;
+    padding-top: 0px;
+  }
+  .newsletter__text {
+    text-align: left;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 78px;
+    padding-top: 15px;
   }
 }
 
@@ -1224,6 +1272,26 @@ img {
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+  .form__newsletter {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 16px;
+    width: calc(100vw - 2em);
+    max-width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1263,22 +1331,6 @@ img {
 }
 
 /* newsletter form*/
-.form__newsletter {
-  box-sizing: border-box;
-  padding-left: 16px;
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
