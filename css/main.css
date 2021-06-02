@@ -919,13 +919,21 @@ img {
     height: 92px;
   }
   .client__list {
+    box-sizing: border-box;
     flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .client__item {
+    box-sizing: border-box;
   }
   .client__container {
-    width: calc((90vw - 30px) / 6);
-    max-width: 1200px;
+    box-sizing: border-box;
+    width: 100%;
     padding-bottom: 0px;
     margin-bottom: 94px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -1057,6 +1065,7 @@ img {
     align-items: flex-start;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: left;
   }
   .contact--right-side {
     margin-left: 70px;
@@ -1064,12 +1073,13 @@ img {
   }
   .newsletter__text {
     text-align: left;
+    margin-top: 0px;
   }
   .newsletter {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     margin-left: 78px;
-    padding-top: 15px;
+    padding-top: 0px;
   }
 }
 
@@ -1327,6 +1337,11 @@ img {
   }
   .form-container-checkbox {
     width: 448px;
+  }
+  .form__newsletter {
+    display: inline-flex;
+    width: 358px;
+    margin-right: 12px;
   }
 }
 

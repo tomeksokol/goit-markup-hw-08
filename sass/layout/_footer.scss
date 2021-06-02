@@ -94,6 +94,7 @@
     align-items: flex-start;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: left;
   }
 
   .contact--right-side {
@@ -103,13 +104,14 @@
 
   .newsletter__text {
     text-align: left;
+    margin-top: 0px;
   }
 
   .newsletter {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     margin-left: 78px;
-    padding-top: 15px;
+    padding-top: 0px;
   }
 }
 

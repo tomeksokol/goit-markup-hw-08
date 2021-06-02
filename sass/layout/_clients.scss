@@ -81,14 +81,23 @@
   }
 
   .client__list {
+    box-sizing: border-box;
     flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .client__item {
+    box-sizing: border-box;
   }
 
   .client__container {
-    width: calc((90vw - 30px) / 6);
-    max-width: 1200px;
+    box-sizing: border-box;
+    width: 100%;
     padding-bottom: 0px;
     margin-bottom: 94px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
