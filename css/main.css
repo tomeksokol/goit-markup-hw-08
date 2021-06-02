@@ -221,14 +221,29 @@ img {
   }
   .menu-social__list {
     display: flex;
-    padding-left: 40px;
-    justify-content: flex-start;
-    margin-right: 15px;
+    justify-content: space-evenly;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.222px;
     letter-spacing: 0.02em;
     color: var(--hover-color);
+  }
+  .menu-mobile__icon:hover,
+  .menu-mobile__icon:focus {
+    fill: var(--hover-color);
+  }
+  .menu--accent {
+    position: relative;
+  }
+  .menu--accent::after {
+    position: absolute;
+    right: -20%;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 22px;
+    border-radius: px;
+    background-color: #d3cdcd;
   }
 }
 
@@ -236,6 +251,12 @@ img {
   .modal-window {
     max-width: 450px;
     min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile__menu {
+    display: none;
   }
 }
 
@@ -363,6 +384,30 @@ img {
   height: 18px;
   margin: auto;
   fill: var(--logo-color);
+}
+
+.menu-btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-btn__img {
+  width: 22px;
+  height: 22px;
+  margin: auto;
+  fill: var(--logo-color);
+}
+
+.menu-btn__img:hover, .menu-btn__img:focus {
+  fill: var(--hover-color);
 }
 
 .social-links {
