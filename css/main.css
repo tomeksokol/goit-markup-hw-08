@@ -836,6 +836,68 @@ img {
   margin-bottom: 16px;
 }
 */
+@media screen and (min-width: 320px) {
+  .client__header {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .client__list {
+    display: inline-flex;
+    align-content: space-between;
+    justify-content: center;
+  }
+  .client__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .client__logo {
+    width: 185px;
+    height: 68px;
+    /*display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;*/
+    fill: #afb1b8;
+    cursor: pointer;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  }
+  .client__logo:hover, .client__logo:focus {
+    fill: var(--hover-color);
+    border: 1px solid var(--hover-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /*.clients__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((70vw - 30px) / 2);
+    justify-content: space-between;
+  }*/
+  /*.client__container {
+    width: calc((70vw - 30px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }*/
+}
+
+@media screen and (min-width: 1200px) {
+  .client__header {
+    font-size: 36px;
+    line-height: 1.167;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+}
+
+/*
 .client__header {
   font-weight: 700;
   font-size: 36px;
@@ -867,14 +929,16 @@ img {
   cursor: pointer;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
 
-.client__logo:hover, .client__logo:focus {
-  fill: var(--hover-color);
-  border: 1px solid var(--hover-color);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--hover-color);
+    border: 1px solid var(--hover-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-
+*/
 .contact {
   background-color: var(--hero-footer-color);
 }
