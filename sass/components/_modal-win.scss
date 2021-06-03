@@ -34,7 +34,7 @@
 
   .menu__list {
     padding-top: 48px;
-    padding-bottom: 260px;
+    padding-bottom: 220px;
   }
 
   .menu__item {
@@ -78,6 +78,7 @@
   .menu-social__list {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 15px;
 
     font-weight: 500;
     font-size: 18px;
@@ -96,12 +97,12 @@
 
     &::after {
       position: absolute;
+      bottom: 0px;
       right: -20%;
       content: "";
       display: block;
       width: 1px;
       height: 22px;
-      border-radius: px;
       background-color: rgb(211, 205, 205);
     }
   }
@@ -133,11 +134,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 528px;
   min-height: 581px;
   border-radius: 4px;
-
   background-color: var(--white-color);
   box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.72);
   -webkit-box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.72);
